@@ -1,0 +1,104 @@
+@use "../all-in-one/mixins" as mixins;
+.about-area{
+  padding: 40px 80px;  
+ background-color: blue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ @include mixins.responsive(ms){
+   padding: 20px 10px; 
+   flex-direction: column;
+ }
+ @include mixins.responsive(ml){
+  padding: 20px 10px; 
+  flex-direction: column;
+}
+@include mixins.responsive(m){
+  padding: 20px 10px; 
+  flex-direction: column;
+}
+@include mixins.responsive(l){
+  padding: 40px 80px;  
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ &-img{
+    width: 250px;
+    height: 200px;
+    @include mixins.responsive(ms){
+      width: 250px;
+      height: 200px; 
+    }
+    @include mixins.responsive(ml){
+      width: 250px;
+      height: 200px; 
+    }
+    @include mixins.responsive(m){
+      border-radius: 8px;
+      width: 350px;
+      height: 200px; 
+    }
+    @include mixins.responsive(l){
+      width: 350px;
+      height: 200px;
+    }
+ }
+ &-title{
+    color: aliceblue;
+    font-size:xx-large;
+    font-family:monospace;
+    margin: 0px 170px;
+    @include mixins.responsive(ms){
+      text-align: center;
+     font-size:18px; 
+     font-weight: 800;
+     margin: 20px  10px 10px 20px;
+    }
+    @include mixins.responsive(ml){
+      text-align: center;
+     font-size:18px; 
+     font-weight: 800;
+     margin: 20px  10px 10px 20px;
+    }
+    @include mixins.responsive(m){
+      text-align: center;
+     font-size:25px; 
+     font-weight: 800;
+     margin: 20px  10px 10px 20px;
+    }
+    @include mixins.responsive(l){
+      color: aliceblue;
+      font-size:xx-large;
+      font-family:monospace;
+      margin: 10px 170px;
+    }
+ }
+ &-para{
+    color: aliceblue;
+    margin: 0px 170px;
+    @include mixins.responsive(ms){
+      font-size:13px; 
+      margin: 2px 10px;
+    }
+    @include mixins.responsive(ml){
+      font-size:13px; 
+      margin: 2px 10px;
+    }
+    @include mixins.responsive(m){
+      font-size:18px; 
+      margin: 2px 20px;
+    }
+    @include mixins.responsive(l){
+      color: aliceblue;
+      margin: 0px 10px;
+    }
+    a{
+        color:yellow;
+    }
+    a:hover{
+        color: black;
+    }
+ }
+}

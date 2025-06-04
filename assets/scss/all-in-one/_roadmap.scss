@@ -1,0 +1,395 @@
+@use "../all-in-one/mixins" as mixins;
+.roadmap{
+    background-color:antiquewhite;
+    padding: 60px 60px;
+    @include mixins.responsive(ms){
+        padding: 20px 10px;
+    }
+    @include mixins.responsive(ml){
+        padding: 20px 10px;
+    }
+    @include mixins.responsive(m){
+        padding: 20px 10px;
+    }
+    @include mixins.responsive(l){
+        padding: 60px 60px;
+    }
+    &-area-detail{
+        text-align: center;
+        h2{
+            font-family: fantasy;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            color: rgb(145, 143, 143);
+        }
+    }
+    .line{
+        background:linear-gradient(to right ,pink,blue);
+        width: 78px;
+        height: 4px;
+        border-radius: 13px;
+        margin: 30px auto 1px auto;
+    }
+    &-area-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+        
+        @include mixins.responsive(ms){
+          flex-direction: column;
+        }
+        @include mixins.responsive(ml){
+            flex-direction: column;
+          }
+          @include mixins.responsive(m){
+            flex-direction: column;
+          }
+          @include mixins.responsive(l){
+            flex-direction: row;
+          }
+        &-html{
+            padding: 10px 50px;
+            position: relative;
+            cursor: pointer;
+            filter: grayscale(99%);
+            &:hover &-images::after  {
+                animation: rotate-infinite 4000ms linear infinite;
+                
+            }
+            &-images{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 20px;
+                }
+                margin: 16px 10px 10px 10px;
+                position: relative;
+               
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: -18px;
+                    left: 74px;
+                    width: 42%;
+                    height: 150%;
+                    border: 5px dotted blue;
+                    border-radius: 50%;
+                    @include mixins.responsive(ms){
+                    top: -18px;
+                    left: 28px;
+                    width: 65%;
+                    height: 148%;
+                    }
+                    @include mixins.responsive(ml){
+                        top: -21px;
+                        left: 74px;
+                        width: 45%;
+                        height: 164%;
+                        }
+                    
+         @include mixins.responsive(m){
+              top: -27px;
+              left: 77px;
+             width: 46%;
+             height: 178%;
+             }
+             @include mixins.responsive(l){
+                top: -18px;
+                left: 25px;
+                width: 68%;
+                height: 150%;
+               }
+                        
+             } 
+            
+            }
+            h3{
+                margin-top: 30px;
+                color: blue;
+            }
+            p{
+
+                color: grey;
+                line-height: 1.5;
+                padding: 0px 7px;
+            }
+            text-align: center;
+            position: relative;
+            &::after{
+                position: absolute;
+                margin: -140px 170px;
+                content: " ➡️ ";
+                width: 20px;
+                height: 20px;
+                font-size: 40px;
+                font-weight: 900;
+               
+                z-index: 1;
+                @include mixins.responsive(ms){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(ml){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(m){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(l){
+                    margin: -140px 130px;
+                    content: " ➡️ ";
+                    width: 20px;
+                    height: 20px;
+                    font-size: 40px;
+                    font-weight: 900;
+                }
+             
+            }
+            &:hover::after{
+
+                margin: -140px 180px;
+                transition: 700ms;
+                @include mixins.responsive(ms){
+                    
+                    margin: -2px -25px;
+                }
+                @include mixins.responsive(ml){
+                    
+                    margin: -2px -25px;
+                }
+                @include mixins.responsive(m){
+                    
+                    margin: -2px -25px;
+                }
+                @include mixins.responsive(l){
+                    
+                    margin: -140px 141px;
+                }
+            }
+            &:hover{
+                filter: none;
+                
+                transition: 500ms;
+            }
+        }
+        &-css{
+            padding: 10px 50px;
+            position: relative;
+            cursor: pointer;
+            filter: grayscale(99%);
+            &:hover &-images::after  {
+                animation: rotate-infinite 4000ms linear infinite;
+                
+            }
+           
+            &-images{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 20px;
+                    
+                }
+                margin: 16px 10px 10px 10px;
+                position: relative;
+                @include mixins.responsive(ms){
+                    margin: 66px 10px 10px 10px;   
+                }
+                 @include mixins.responsive(ml){
+                    margin: 66px 10px 10px 10px;   
+                }
+                @include mixins.responsive(m){
+                    margin: 66px 10px 10px 10px;   
+                }
+                @include mixins.responsive(l){
+                    margin: 16px 10px 10px 10px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: -18px;
+                    left: 101px;
+                    width: 35%;
+                    height: 149%;
+                    border: 5px dotted blue;
+                    border-radius: 50%;
+                    @include mixins.responsive(ms){
+                        top: -18px;
+                        left: 28px;
+                        width: 65%;
+                        height: 148%;
+                        }
+                        @include mixins.responsive(ml){
+                            top: -21px;
+                            left: 74px;
+                            width: 45%;
+                            height: 164%;
+                            }
+                            @include mixins.responsive(m){
+                                top: -27px;
+                                left: 109px;
+                                width: 38%;
+                                height: 178%;
+                                }
+                                @include mixins.responsive(l){
+                                    top: -18px;
+                                    left: 44px;
+                                    width: 55%;
+                                    height: 149%;
+                                }
+                }
+              }
+           
+           
+            h3{
+                margin-top: 30px;
+                color: blue;
+            }
+            p{
+                color: grey;
+                line-height: 1.5;
+                padding: 0px 7px;
+            }
+            text-align: center;
+            &::after{
+                position: absolute;
+                margin: -140px 199px;
+                content: " ➡️ ";
+                width: 20px;
+                height: 20px;
+                font-size: 40px;
+                font-weight: 900;
+               
+                z-index: 1;
+                @include mixins.responsive(ms){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(ml){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(m){
+                    content: " ⬇️ ";
+                    margin: -10px -25px;
+                }
+                @include mixins.responsive(l){
+                    margin: -140px 145px;
+                    content: " ➡️ ";
+                    
+                   
+                }
+            }
+            &:hover::after{
+                margin: -140px 209px;
+                transition: 700ms;
+                @include mixins.responsive(ms){
+                    
+                    margin: -2px  -25px;
+                }
+                @include mixins.responsive(ml){
+                    
+                    margin: -2px  -25px;
+                }
+                @include mixins.responsive(m){
+                    
+                    margin: -2px  -25px;
+                }
+                @include mixins.responsive(l){
+                    margin: -140px 152px;
+                }
+            }
+            &:hover{
+                filter: none;
+                transition: 500ms;
+            }
+        }
+        &-js{
+            padding: 10px 50px;
+            position: relative;
+            cursor: pointer;
+            filter: grayscale(100%);
+
+            &:hover &-images::after  {
+                animation: rotate-infinite 4000ms linear infinite;
+                
+            }
+            &-images{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 20px;
+                   
+                }
+                margin: 16px 10px 10px 10px;
+                position: relative;
+                @include mixins.responsive(ms){
+                    margin: 66px 10px 10px 10px;   
+                }
+                @include mixins.responsive(ml){
+                    margin: 66px 10px 10px 10px;   
+                }
+                @include mixins.responsive(m){
+                    margin: 66px 10px 10px 10px;   
+                }
+                @include mixins.responsive(l){
+                    margin: 16px 10px 10px 10px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: -17px;
+                    left: 83px;
+                    width: 39%;
+                    height: 145%;
+                    border: 5px dotted blue;
+                    border-radius: 50%;
+                    @include mixins.responsive(ms){
+                        top: -18px;
+                        left: 28px;
+                        width: 65%;
+                        height: 148%;
+                        }
+                        @include mixins.responsive(ml){
+                            top: -21px;
+                            left: 74px;
+                            width: 45%;
+                            height: 164%;
+                            }
+                            @include mixins.responsive(m){
+                                top: -23px;
+                                left: 90px;
+                                width: 42%;
+                                height: 171%;
+                                }
+                                @include mixins.responsive(l){
+                                    top: -17px;
+                                    left: 33px;
+                                    width: 62%;
+                                    height: 148%;
+                                }
+              }
+            }
+           
+          
+            h3{
+                margin-top: 30px;
+                color: blue;
+            }
+            p{
+                color: grey;
+                line-height: 1.5;
+                padding: 0px 7px;
+            }
+            text-align: center;
+            &:hover{
+                filter: none;
+                transition: 500ms;
+            }
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@use "../all-in-one/mixins" as mixins;
+.anime{
+    .box1{
+        position: absolute;
+        top: 15%;
+        left: 7%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid blueviolet;
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+      @include mixins.responsive(ms){
+       display: none;
+      }
+      @include mixins.responsive(ml){
+        display: none;
+       }
+       @include mixins.responsive(m){
+        display: none;
+       }
+    }
+    .box2{
+        position: absolute;
+        top: 85%;
+        left: 23%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid blueviolet;
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+          }
+          @include mixins.responsive(ml){
+            display: none;
+          }
+          @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .box3{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid blueviolet;
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+          }
+          @include mixins.responsive(ml){
+            display: none;
+          }
+          @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .box4{
+        position: absolute;
+        top: 21%;
+        left: 30%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid blueviolet;
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+          }
+          @include mixins.responsive(ml){
+            display: none;
+          }
+          @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .dot1{
+        position: absolute;
+        top: 21%;
+        left: 19%;
+        width: 1px;
+        height: 1px;
+        background-color: transparent;
+        border: 3px solid rgb(43, 226, 128);
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+        }
+        @include mixins.responsive(ml){
+            display: none;
+        }
+        @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .dot2{
+        position: absolute;
+        top: 88%;
+        left: 9%;
+        width: 1px;
+        height: 1px;
+        background-color: transparent;
+        border: 3px solid rgb(220, 130, 19);
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+        }
+        @include mixins.responsive(ml){
+            display: none;
+        }
+        @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .dot3{
+        position: absolute;
+        top: 65%;
+        left: 53%;
+        width: 1px;
+        height: 1px;
+        background-color: transparent;
+        border: 3px solid rgb(89, 175, 237);
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+        }
+        @include mixins.responsive(ml){
+            display: none;
+        }
+        @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .dot4{
+        position: absolute;
+        top: 89%;
+        left: 43%;
+        width: 1px;
+        height: 1px;
+        background-color: transparent;
+        border: 3px solid rgb(219, 19, 179);
+        border-radius: 5px;
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            display: none;
+        }
+        @include mixins.responsive(ml){
+            display: none;
+        }
+        @include mixins.responsive(m){
+            display: none;
+           }
+    }
+    .sq1{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid red;
+        
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            top:14%;
+            left: 5%;
+            border: 3px solid blue;
+        }
+        @include mixins.responsive(ml){
+            top:14%;
+            left: 5%;
+            border: 3px solid blue;
+        }
+        @include mixins.responsive(m){
+            top:15%;
+            left: 5%;
+            border: 3px solid blue;
+        }
+        @include mixins.responsive(l){
+            top:15%;
+            left: 8%;
+            border: 3px solid blue;
+        }
+    }
+    .sq2{
+        position: absolute;
+        top: 70%;
+        left: 42%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid red;
+        
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            top:14%;
+            left: 50%;
+            border: 3px solid black;
+        }
+        @include mixins.responsive(ml){
+            top:14%;
+            left: 50%;
+            border: 3px solid black;
+        }
+        @include mixins.responsive(m){
+            top:15%;
+            left: 50%;
+            border: 3px solid black;
+        }
+        @include mixins.responsive(l){
+            top:15%;
+            left: 50%;
+            border: 3px solid black;
+        }
+    }
+    .sq3{
+        position: absolute;
+        top: 15%;
+        left: 51%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 3px solid red;
+        
+        animation: boxing linear 5s infinite;
+        z-index: -1;
+        @include mixins.responsive(ms){
+            top:14%;
+            left: 90%;
+            border: 3px solid green;
+        }
+        @include mixins.responsive(ml){
+            top:14%;
+            left: 90%;
+            border: 3px solid green;
+        }
+        @include mixins.responsive(m){
+            top:15%;
+            left: 90%;
+            border: 3px solid green;
+        }
+        @include mixins.responsive(l){
+            top:15%;
+            left: 90%;
+            border: 3px solid green;
+        }
+    }
+}

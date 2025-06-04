@@ -1,0 +1,202 @@
+
+
+
+@use "../all-in-one/variables" as var ;
+@use "../all-in-one/functions" as fun;
+@use "../all-in-one/animations" as anim;
+@use "../all-in-one/mixins" as mixins;
+.tamil{
+    font-size: 19px;
+    @include mixins.responsive(ms){
+      font-family: fantasy;
+      font-size: 20px; 
+      
+   } 
+   @include mixins.responsive(ml){
+      font-family: fantasy;
+      font-size: 20px; 
+      
+   } 
+   @include mixins.responsive(m){
+      font-family: fantasy;
+      font-size: 20px; 
+      
+   } 
+   @include mixins.responsive(l){
+      font-size: 19px;
+   }
+}
+.web{
+   font-family: cursive;
+   @include mixins.responsive(ms){
+      font-family: fantasy;
+      margin-left: -8px;
+      margin-right: -20px;
+      margin-top: 5px;
+   }
+   @include mixins.responsive(ml){
+      font-family: fantasy;
+      margin-left: -8px;
+      margin-right: -20px;
+      margin-top: 5px;
+   }
+   @include mixins.responsive(m){
+      font-family: fantasy;
+      margin-left: -8px;
+      margin-right: -20px;
+      margin-top: 5px;
+   }
+   @include mixins.responsive(l){
+      margin-left: -65px;
+      margin-right: -30px;
+      font-family: cursive;
+   }
+}
+ a{
+   text-decoration: none;
+}
+.header1{
+    padding: 12px 190px;
+    @include mixins.responsive(ms){
+     padding: 12px 20px;
+    }
+    
+    @include mixins.responsive(ml){
+      padding: 12px 20px;
+     }
+     @include mixins.responsive(m){
+      padding: 12px 40px 12px 50px;
+     }
+     @include mixins.responsive(l){
+      padding: 12px 170px;
+     
+   }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+   
+    &-menu{
+      display:flex;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 600;
+     @include mixins.responsive(ms){
+      display:none;
+
+      position:fixed;
+      top:-150%;
+      left:0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: aquamarine;
+      z-index: 1;
+      
+      &.show{
+         display: block;
+         text-align: center;
+         top:67px;
+        
+      }
+     
+      & li{
+       
+         padding:15px 20px;
+        
+         &.actives{
+            background-color: antiquewhite;
+            padding: 17px 200px;
+            margin-left: -90px;
+            
+         }
+      }
+     
+     
+     }
+     @include mixins.responsive(ml){
+      display:none;
+     
+     }
+     @include mixins.responsive(m){
+      display:none;
+     
+     }
+     @include mixins.responsive(l){
+      display: flex;
+      margin-right: -90px;
+      margin-top: 18px;
+      font-size: 14px;
+      font-weight: 600;
+
+     
+      
+     }
+     
+     &-item > a{
+        margin-right: 30px;
+        text-decoration: none;
+        color:var.$fontcolor;
+        transition: 200ms;
+     &:hover{
+        color:fun.themecolor("primary-hover")
+     }
+     &.active{
+        color:fun.themecolor("primary-hover")
+     }
+     }
+    }
+    &.navfixed{
+      position: fixed;
+      top: -1px;
+      left: 0%;
+     width: 100%;
+     background-color: white;
+     box-shadow: 1px 1px 2px 0 white;
+     z-index: 1;
+
+    }
+}
+.tamil-anim{
+   transition: 500ms;
+   animation:colorchange 10s infinite ;
+}
+.list{
+   display:none;
+   @include mixins.responsive(ms){
+      display: block;
+      font-size: 20px;
+      margin-right: 8px;
+   }
+   @include mixins.responsive(ml){
+      display: block;
+      font-size: 20px;
+   }
+   @include mixins.responsive(m){
+      display: block;
+      font-size: 20px;
+   }
+   @include mixins.responsive(l){
+      display:none;
+   }
+}
+.iconflex{
+   display: flex;
+}
+.xico{
+   margin-top: 3px;
+   margin-left: -33px;
+   @include mixins.responsive(ml){
+      margin-top: 3px;
+   margin-left: -26px;
+   }
+   @include mixins.responsive(m){
+      margin-top: 3px;
+   margin-left: -26px;
+   }
+   @include mixins.responsive(l){
+      display:none;
+   }
+}
+.hidden{
+   display: none;
+}

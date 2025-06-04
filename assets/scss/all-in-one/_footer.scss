@@ -1,0 +1,58 @@
+@use "../all-in-one/mixins" as mixins;
+.footer{
+    padding: 10px 20px;
+    background-color: black;
+    &-area{
+        color: white;
+        text-align: center;
+        a{
+            color: chartreuse;
+        }
+        p{
+            margin-top: 5px;
+        }
+    }
+}
+.Social{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 400px;
+ @include mixins.responsive(ms){
+    flex-direction: column;
+    margin-left: 74px;
+ }
+ @include mixins.responsive(ml){
+    flex-direction: column;
+    margin-left: 119px;
+ }
+ @include mixins.responsive(m){
+    flex-direction: column;
+    margin-left: 299px;
+ }
+ @include mixins.responsive(l){
+    flex-direction: row;
+    margin-left: 129px;
+ }
+    h3{
+       
+        padding: 10px 20px;
+        a{
+            color: aqua;
+        }
+    }
+}
+.cr{
+    color: rgb(178, 244, 78);
+    text-align: center;
+    margin-top: 10px;
+}
+@include mixins.responsive(ms){
+    .x{
+        margin-left: 43px;
+    }
+}
+@include mixins.responsive(ml){
+    .x{
+        margin-left: 43px;
+    }
+}

@@ -1,0 +1,132 @@
+@use "../all-in-one/mixins" as mixins;
+@use "../all-in-one/variables" as var;
+
+.contact-btn{
+    padding: 10px 20px;
+    background-color: blue;
+    border-radius: 10px;
+    text-decoration: none;
+    
+   &-prim{
+    color:red;
+    font-size: small;
+    font-weight: 800;
+   
+    &:hover{
+        transition: 400ms;
+        color:white;
+    }
+   }
+
+}
+.home-area-content-btn{
+    display: flex;
+    @include mixins.responsive(ms){
+        display: flex;
+        
+    }
+    @include mixins.responsive(ml){
+        display: flex;
+        
+    }
+    @include mixins.responsive(m){
+        display: flex;
+        
+    }
+    @include mixins.responsive(l){
+       
+        flex-direction: row;
+    }
+}
+.home-area-content-btn1{
+    margin:20px 2px;
+    padding: 10px 30px;
+    
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+    color:var.$fontcolor ;
+    @include mixins.responsive(ms){
+        margin:-9px 15px  0px -10px;
+        padding: 1px 5px;
+        
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    @include mixins.responsive(ml){
+        margin:-9px 15px  0px 40px;
+        padding: 1px 5px;
+        
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    @include mixins.responsive(m){
+        margin:-9px 15px  0px 175px;
+        padding: 1px 25px;
+        
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    @include mixins.responsive(l){
+      
+      margin:30px 10px 20px 60px;
+      padding: 10px 20px;
+    }
+    &:hover{
+        transition: 400ms;
+        color:white;
+        background-color: blue;
+
+    }
+}
+.home-area-content-btn2{
+    margin:20px 12px;
+    padding: 10px 34px;
+    border-radius: 8px;
+    border:2px solid blueviolet;
+    color:var.$fontcolor ;
+    @include mixins.responsive(ms){
+        margin:-9px 0px  0px 0px;
+        padding: 3px 10px;
+      
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    color:var.$fontcolor ;
+    @include mixins.responsive(ml){
+        margin:-9px 0px  0px 0px;
+        padding: 3px 10px;
+      
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    @include mixins.responsive(m){
+        margin:-9px 0px  0px 0px;
+        padding: 3px 30px;
+      
+        border-radius: 8px;
+        border: 2px solid blueviolet;
+        color:var.$fontcolor ;
+        
+    }
+    @include mixins.responsive(l){
+       
+      
+        margin:30px 10px 20px 10px;
+        padding: 10px 25px;
+    }
+    &:hover{
+        transition: 400ms;
+        color:white;
+        background-color: blue;
+    }
+}

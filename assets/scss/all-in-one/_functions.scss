@@ -1,0 +1,4 @@
+@use "../all-in-one/variables" as var ;
+@function themecolor($normal:"primary"){
+   @return map-get( var.$theme-color, $normal )
+}
